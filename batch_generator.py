@@ -59,8 +59,8 @@ class DataGenerator(object):
             X[i, :, :, :] = load_image(ID)
 
             # Store class
-            # print('Storing class for: ', str(ID))
-            # print(labels[ID])
+            print('Storing class for: ', str(ID))
+            print(labels[ID])
             y[i] = labels[ID]
 
         return X, y

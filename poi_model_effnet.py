@@ -25,6 +25,8 @@ def load_ids(data_file_path):
         for line in infile:
             img_path = line['path']  # replacing with path to enable img retrieval from multiple folders
             label = list(line['label'])
+            print('label')
+            print(label)
             label_dict[img_path] = label
             train_prob = np.random.random() * 10
             print('Line LOADED: ', str(line_counter))
